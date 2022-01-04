@@ -1,0 +1,16 @@
+$z-index: (
+  navigation: 200,
+  toast: 99,
+  modal: 98,
+  third: 3,
+  second: 2,
+  first: 1,
+);
+
+@function z-index($key) {
+    @return map-get($z-index, $key);
+}
+
+@mixin z-index($key) {
+  z-index: z-index($key);
+}

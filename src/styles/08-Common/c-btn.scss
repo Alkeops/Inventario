@@ -1,0 +1,12 @@
+.c-btn{
+    color: var(--color-white);
+    background: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: var(--font-size-sm);
+    box-shadow: 0px 2px 4px black;
+    @include media-up($breakpoint-sm){
+        background: var(--color-error);
+    }
+}

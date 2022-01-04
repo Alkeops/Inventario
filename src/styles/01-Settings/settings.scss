@@ -1,0 +1,34 @@
+/* Colors */
+$color-white: #fff;
+$color-bg-white: #fff;
+$color-black: #222;
+$color-primary: #5b59b6;
+$color-gray: #6b6b6b;
+$color-success: #0c600a;
+$color-error: #822323;
+/* Fonts */
+$font-primary: "Poppins", sans-serif;
+$font-size-sm: 1.2rem;
+/* Breakpoints */
+
+$breakpoint-sm: 600px;
+$breakpoint-md: 900px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1800px;
+/* Css Vars */
+:root {
+  --color-white: #{$color-white};
+  --color-bg-white: #{$color-bg-white};
+  --color-black: #{$color-black};
+  --color-primary: #{$color-primary};
+  --color-gray: #{$color-gray};
+  --color-success: #{$color-success};
+  --color-error: #{$color-error};
+
+  --font-primary: #{$font-primary};
+  --font-size-sm: #{$font-size-sm};
+  --breakpoint-sm: #{$breakpoint-sm};
+  --breakpoint-md: #{$breakpoint-md};
+  --breakpoint-lg: #{$breakpoint-lg};
+  --breakpoint-xl: #{$breakpoint-xl};
+}
