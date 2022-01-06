@@ -1,11 +1,14 @@
-import { Button } from "components/common";
-import {useTheme} from "hooks";
+import AppRoutes from "routes/Routes";
+
+import { useUiContext } from "contexts/UI/ui.context";
 
 function App() {
-  const theme = useTheme();
+  const {
+    state: { theme },
+  } = useUiContext();
   return (
-    <div className="App" style={{...theme, padding: 20}}>
-      <Button label="Todos" onClick={()=>{}} />
+    <div className="App" style={{ ...theme.style }}>
+      <AppRoutes />
     </div>
   );
 }

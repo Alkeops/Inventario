@@ -1,0 +1,13 @@
+.l-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    height: 50px;
+    &__brand{
+        font-size: 1.8rem;
+        color: var(--color-primary);
+        font-weight: 600;
+        white-space: nowrap;
+    }
+}

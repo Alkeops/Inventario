@@ -1,0 +1,15 @@
+.l-menu {
+  position: absolute;
+  background: var(--color-white);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+  transition: .3s;
+  clip-path: circle(12% at 100% 0);
+  &.active{
+    clip-path: circle(200% at 100% 0);
+    background: var(--color-primary);
+  }
+}
