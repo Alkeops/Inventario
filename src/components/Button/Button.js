@@ -16,7 +16,7 @@ export const Button = ({ children, className, label, onClick, variant, ...rest }
 
 Button.propTypes = {
   className: PropTypes.string,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   onClick: PropTypes.func.isRequired,
   variant: PropTypes.string,
   rest: PropTypes.object,

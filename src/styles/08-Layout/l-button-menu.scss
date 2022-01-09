@@ -7,15 +7,28 @@
     right: 0;
     top: 0;
     padding-left: 12px;
-
+    transition: .3s;
     border-radius: 0 0 0 10px;
-    span{
+    &__line{
         display: block;
         width: 22px;
         height: 2px;
         background: var(--color-white);
+        transition: .3s;
         &:last-child{
             margin-top: 5px;
+        }
+    }
+    &--active{
+        .l-button-menu{
+            &__line{
+                &:first-child{
+                    transform: rotate(45deg) translateX(5px);
+                }
+                &:last-child{
+                    transform: rotate(-45deg) translateX(5px);
+                }
+            }
         }
     }
 }
