@@ -1,0 +1,31 @@
+.c-last-movement {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  &__data {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 80%;
+    font-size: 1.5rem;
+    &-name {
+      font-weight: 600;
+    }
+    &-date {
+      color: var(--color-gray);
+    }
+  }
+
+  &--add {
+    background: var(--color-light-success);
+  }
+  &--subtract {
+    background: var(--color-light-error);
+  }
+  @include media-up($breakpoint-md) {
+    &__data {
+      font-size: 1.6rem;
+    }
+  }
+}

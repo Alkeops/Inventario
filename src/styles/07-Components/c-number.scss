@@ -1,0 +1,13 @@
+.c-number{
+    font-size: 3.5rem;
+    font-weight: 600;
+    &--add{
+        color: var(--color-success);
+    }
+    &--subtract{
+        color: var(--color-error);
+    }
+    @include media-up($breakpoint-md){
+        font-size: 4rem;
+    }
+}
