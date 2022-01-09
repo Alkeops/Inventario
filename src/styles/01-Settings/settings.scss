@@ -4,6 +4,7 @@ $color-bg-white: #fff;
 $color-black: #222;
 $color-primary: #5b59b6;
 $color-gray: #6b6b6b;
+$color-light-gray: #f0f0f0;
 $color-success: #0c600a;
 $color-error: #822323;
 /* Fonts */
@@ -24,6 +25,7 @@ $breakpoint-xl: 1800px;
   --color-gray: #{$color-gray};
   --color-success: #{$color-success};
   --color-error: #{$color-error};
+  --color-light-gray: #{$color-light-gray};
 
   --font-primary: #{$font-primary};
   --font-size-sm: #{$font-size-sm};

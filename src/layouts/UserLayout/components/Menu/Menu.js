@@ -14,25 +14,23 @@ const routes = [
 export const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
   const className = classNames(prefix, { [`${prefix}--open`]: isOpen });
+
+  const itemsMenu = routes.map((route) => (
+    <MenuLink key={route.label} {...route} onClick={() => setIsOpen(false)} />
+  ));
   return (
     <div className={className}>
-      <ButtonMenu
-        active={isOpen}
-        onClick={() => {
-          setIsOpen(!isOpen);
-        }}
-      />
       <nav className={`${prefix}__mobile`}>
-        <div className={`${prefix}__mobile-content`}>
-          {routes.map((route) => (
-            <MenuLink
-              key={route.label}
-              {...route}
-              onClick={() => setIsOpen(false)}
-            />
-          ))}
-        </div>
+        <ButtonMenu
+          active={isOpen}
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        />
+
+        <div className={`${prefix}__mobile-content`}>{itemsMenu}</div>
       </nav>
+      <nav className={`${prefix}__desktop`}>{itemsMenu}</nav>
     </div>
   );
 };
