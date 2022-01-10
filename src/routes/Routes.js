@@ -2,14 +2,18 @@ import UserLayout from "layouts/UserLayout/UserLayout";
 import React, { Suspense, lazy } from "react";
 import { Routes as Rts, Route } from "react-router-dom";
 import InventoryRoutes from "./InventoryRoutes";
-const Home = lazy(() => import("views/Home"));
+import Home from 'views/Home';
+import Movements from 'views/Movements';
+import Warehouse from 'views/Warehouse';
+import Settings from 'views/Settings';
+/* const Home = lazy(() => import("views/Home"));
 const Movements = lazy(() => import("views/Movements"));
 const Settings = lazy(() => import("views/Settings"));
-const Warehouse = lazy(() => import("views/Warehouse"));
+const Warehouse = lazy(() => import("views/Warehouse")); */
 
 const Routes = () => {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<></>}>
       <UserLayout>
         <Rts>
           <Route path={"/"} element={<Home />} />

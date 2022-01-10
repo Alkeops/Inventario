@@ -8,11 +8,11 @@ import "./styles/index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <GlobalProvider>
+    <GlobalProvider>
+      <BrowserRouter>
         <App />
-      </GlobalProvider>
-    </BrowserRouter>
+      </BrowserRouter>{" "}
+    </GlobalProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
