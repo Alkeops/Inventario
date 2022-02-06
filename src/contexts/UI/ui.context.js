@@ -9,7 +9,7 @@ export const useUiContext = () => useContext(UiContext);
 export const UiProvider = ({ children }) => {
   const [state, dispatch] = useReducer(uiReducer, initialState);
   return (
-    <UiContext.Provider value={{ state, dispatch }} displayName="Ui">
+    <UiContext.Provider value={{ ...state, dispatch }} displayName="Ui">
       {children}
     </UiContext.Provider>
   );

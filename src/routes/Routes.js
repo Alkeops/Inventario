@@ -6,7 +6,9 @@ import Home from 'views/Home';
 import Movements from 'views/Movements';
 import Warehouse from 'views/Warehouse';
 import Settings from 'views/Settings';
-/* const Home = lazy(() => import("views/Home"));
+/* 
+TODO agregar lazy -> Loader <- Suspense
+const Home = lazy(() => import("views/Home"));
 const Movements = lazy(() => import("views/Movements"));
 const Settings = lazy(() => import("views/Settings"));
 const Warehouse = lazy(() => import("views/Warehouse")); */
